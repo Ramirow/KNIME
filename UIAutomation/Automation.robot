@@ -2,8 +2,9 @@
 Documentation     Automation Testing for KNIME
 Resource      ./Login_resources.robot
 Resource     ./Hub_resources.robot
-*** Variables ***
+Resource     ./Create_Space_resources.robot
 
+*** Variables ***
 
 *** Test Cases *** 
 Navigate to login page
@@ -20,5 +21,8 @@ Verify the login Page
 Navigate to Spaces page
     [Documentation]  We expect the user to navigate from HUB page to spaces page     
     Navigate to Spaces 
+Create a public space
+    [Documentation]  We expect the user to create public space
+    Create the public space     
      
-
+  
