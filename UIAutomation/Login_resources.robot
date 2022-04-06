@@ -28,7 +28,7 @@ Navigate to login
      Click Element    xpath=${LOGIN}
    
 Insert a valid username and an invalid password
-     Wait Until Element Is Visible   xpath=${USRFIELD}      20
+     Wait Until Element Is Visible   xpath=${USRFIELD}      10
      Input Text    xpath=${USRFIELD}    ${VALIDUSR}
      Input Password    xpath=${PWDFIELD}    ${UNVALIDPWD}
      #Click Element    xpath=${AGREE}
