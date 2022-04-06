@@ -1,0 +1,10 @@
+Test Scenario : Verify the user can create a public space .
+    Test case : Create a public space.
+        Pre Condition : The user is in Space page .
+        Test steps :  
+              1 - Below "create new space" click on public space.
+              2 - The user is in new space page. 
+              3 - insert the space name in public space field for example "space 1".
+              4 - click on save button .
+        Expected Result : There should be a message to confirm the creation proccess.
+        

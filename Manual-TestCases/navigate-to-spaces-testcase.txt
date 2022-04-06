@@ -1,0 +1,8 @@
+Test Scenario : Verify the user can navigate to spaces page.
+    Test case : Navigate to spaces page.
+        Pre Condition : The user is in Hub page and the profile icon is there.
+        Test steps :  
+              1 - click on the profile icon .
+              2 - from dropdown menu click on spaces .
+        Expected Result : The user should be navigated to spaces page.
+        Post conditoin : The spaces page is shown .

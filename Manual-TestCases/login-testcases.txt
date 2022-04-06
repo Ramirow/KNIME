@@ -1,0 +1,32 @@
+Test Scenario : Verify the login Page .
+    Test case : Insert a valid username and an invalid password.
+        Pre Condition :  Need a valid login Account to login .
+        Test steps :  
+              1 - insert a valid username . 
+              2 - Enter an invalid password .
+              3 - click login button . 
+        Expected Result : Error message should appear .
+
+    Test case : Insert invalid username and  valid password.     
+        Pre Condition :  Need a valid login Acount to login .
+        Test steps :  
+              1 - Insert a invalid username . 
+              2 - Insert an valid password .
+              3 - click login button . 
+        Expected Result : Error message should appear .
+
+    Test case : Leave the username and password blank.
+             Test steps :  
+              1 - leave the username blank. 
+              2 - Enter an valid password blank.
+              3 - click login button . 
+        Expected Result : Error message should appear .
+        
+    Test case : Enter valid username and password.
+        Pre Condition : Need a valid login Acount to login .
+             Test steps :  
+              1 - Insert a valid username. 
+              2 - Insert a valid password.
+              3 - click login button . 
+        Expected Result : the user should be navigated to Hub page .
+        Post conditoin : The hub page is shown .
