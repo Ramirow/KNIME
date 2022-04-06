@@ -3,6 +3,7 @@ Documentation     Automation Testing for KNIME
 Resource      ./Login_resources.robot
 Resource     ./Hub_resources.robot
 Resource     ./Create_Space_resources.robot
+Resource     ./Delete_Space_resources.robot
 
 *** Variables ***
 
@@ -22,7 +23,10 @@ Navigate to Spaces page
     [Documentation]  We expect the user to navigate from HUB page to spaces page     
     Navigate to Spaces 
 Create a public space
-    [Documentation]  We expect the user to create public space
-    Create the public space     
+    [Documentation]  We expect the user to create a public space
+    Create the public space
+Delete a public space
+    [Documentation]  We expect the user to delete a public space
+    Delete the public space         
      
   
