@@ -4,6 +4,7 @@ Resource      ./Login_resources.robot
 Resource     ./Hub_resources.robot
 Resource     ./Create_Space_resources.robot
 Resource     ./Delete_Space_resources.robot
+Resource     ./UI_Verification_resources.robot
 
 *** Variables ***
 
@@ -29,4 +30,8 @@ Delete a public space
     [Documentation]  We expect the user to delete a public space
     Delete the public space         
      
-  
+Verify the UI of space page
+     Verify clicking in the public space area 
+    #  Verify clicking in the private space area 
+    #  Verify clicking on create public space button
+    #  Verify clicking on create private space button
