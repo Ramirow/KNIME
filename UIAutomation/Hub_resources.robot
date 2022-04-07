@@ -4,7 +4,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${ProfileIcon}      //*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/button/div
-${Spaces}       //*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/ul/li[2]/a
+${Spaces}       //*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/div/ul/li[2]/a/div/span
 ${YourSpace}     //*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/h2
 
 *** Keywords ***     
