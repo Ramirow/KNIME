@@ -1,0 +1,26 @@
+Test Scenario : Verify the UI.
+   Test case : Verify the name and the functionality of the public space.
+        Pre Condition :  The user should be in space page.
+        Test steps :  
+              1 - Verify the name of public space.
+              2 - click on any place inside public space border. 
+        Expected Result : The user should be navigated to this public space page .
+
+    Test case : Verify the name and the functionality of the private space..
+        Pre Condition :  The user should be in space page.
+        Test steps :  
+              1 - Verify the name of private space.
+              2 - click on any place inside private space border. 
+        Expected Result : The user should be navigated to this private space page . 
+
+    Test case : Verify that clicking on creating a public space will create it.
+        Pre Condition :  The user should be in space page.
+        Test steps :  
+              1 - click on public space button on create new space area. 
+        Expected Result : The public space should be created . 
+
+     Test case : Verify that clicking on creating a private space will create it.
+        Pre Condition :  The user should be in space page.
+        Test steps :  
+              1 - click on private space button on create new space area. 
+        Expected Result : The private space should be created .            
