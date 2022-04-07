@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.1 on win32)" generated="20220407 00:57:29.304" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.1 on win32)" generated="20220407 01:03:43.355" rpa="false" schemaversion="3">
 <suite id="s1" name="Automation" source="C:\Users\Lenovo\OneDrive\Desktop\KNIME\UIAutomation\Automation.robot">
 <test id="s1-t1" name="Navigate to login page" line="11">
 <kw name="Navigate to login" library="Login_resources">
@@ -7,37 +7,37 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220407 00:57:30.179" level="INFO">Opening browser 'chrome' to base url 'https://hub.knime.com/'.</msg>
-<status status="PASS" starttime="20220407 00:57:30.178" endtime="20220407 00:57:35.067"/>
+<msg timestamp="20220407 01:03:43.742" level="INFO">Opening browser 'chrome' to base url 'https://hub.knime.com/'.</msg>
+<status status="PASS" starttime="20220407 01:03:43.741" endtime="20220407 01:03:46.379"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${ACCEPT}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:35.068" endtime="20220407 00:57:35.403"/>
+<status status="PASS" starttime="20220407 01:03:46.380" endtime="20220407 01:03:46.666"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${ACCEPT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:35.405" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[3]/div[2]/div/div[3]/button'.</msg>
-<status status="PASS" starttime="20220407 00:57:35.403" endtime="20220407 00:57:35.542"/>
+<msg timestamp="20220407 01:03:46.667" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[3]/div[2]/div/div[3]/button'.</msg>
+<status status="PASS" starttime="20220407 01:03:46.666" endtime="20220407 01:03:46.730"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${LOGIN}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:35.543" endtime="20220407 00:57:35.640"/>
+<status status="PASS" starttime="20220407 01:03:46.730" endtime="20220407 01:03:46.762"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${LOGIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:35.641" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/button'.</msg>
-<status status="PASS" starttime="20220407 00:57:35.640" endtime="20220407 00:57:35.808"/>
+<msg timestamp="20220407 01:03:46.763" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/button'.</msg>
+<status status="PASS" starttime="20220407 01:03:46.763" endtime="20220407 01:03:46.912"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:30.178" endtime="20220407 00:57:35.808"/>
+<status status="PASS" starttime="20220407 01:03:43.740" endtime="20220407 01:03:46.913"/>
 </kw>
 <doc>We expect the user to navigate to login page</doc>
-<status status="PASS" starttime="20220407 00:57:30.173" endtime="20220407 00:57:35.814"/>
+<status status="PASS" starttime="20220407 01:03:43.739" endtime="20220407 01:03:46.914"/>
 </test>
 <test id="s1-t2" name="Verify the login Page" line="15">
 <kw name="Insert a valid username and an invalid password" library="Login_resources">
@@ -45,178 +45,178 @@
 <arg>xpath=${USRFIELD}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:35.823" endtime="20220407 00:57:37.827"/>
+<status status="PASS" starttime="20220407 01:03:46.918" endtime="20220407 01:03:48.532"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=${USRFIELD}</arg>
 <arg>${VALIDUSR}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:37.829" level="INFO">Typing text 'Rami123' into text field 'xpath=//*[@id="edit-name"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:37.827" endtime="20220407 00:57:38.048"/>
+<msg timestamp="20220407 01:03:48.533" level="INFO">Typing text 'Rami123' into text field 'xpath=//*[@id="edit-name"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:48.532" endtime="20220407 01:03:48.615"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>xpath=${PWDFIELD}</arg>
 <arg>${UNVALIDPWD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:38.050" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
-<msg timestamp="20220407 00:57:38.113" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220407 00:57:38.185" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220407 00:57:38.049" endtime="20220407 00:57:38.185"/>
+<msg timestamp="20220407 01:03:48.616" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
+<msg timestamp="20220407 01:03:48.661" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220407 01:03:48.713" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220407 01:03:48.615" endtime="20220407 01:03:48.713"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${SIGNIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:38.186" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:38.186" endtime="20220407 00:57:39.773"/>
+<msg timestamp="20220407 01:03:48.713" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:48.713" endtime="20220407 01:03:50.055"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:39.774" endtime="20220407 00:57:39.811"/>
+<status status="PASS" starttime="20220407 01:03:50.056" endtime="20220407 01:03:50.078"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220407 00:57:39.823" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
-<status status="PASS" starttime="20220407 00:57:39.811" endtime="20220407 00:57:39.823"/>
+<msg timestamp="20220407 01:03:50.085" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220407 01:03:50.078" endtime="20220407 01:03:50.085"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:35.823" endtime="20220407 00:57:39.824"/>
+<status status="PASS" starttime="20220407 01:03:46.917" endtime="20220407 01:03:50.085"/>
 </kw>
 <kw name="Insert invalid username and valid password" library="Login_resources">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>xpath=${USRFIELD}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220407 00:57:39.825" endtime="20220407 00:57:39.918"/>
+<status status="PASS" starttime="20220407 01:03:50.087" endtime="20220407 01:03:50.141"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=${USRFIELD}</arg>
 <arg>${UNVALIDUSR}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:39.919" level="INFO">Typing text 'usr' into text field 'xpath=//*[@id="edit-name"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:39.918" endtime="20220407 00:57:40.055"/>
+<msg timestamp="20220407 01:03:50.142" level="INFO">Typing text 'usr' into text field 'xpath=//*[@id="edit-name"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:50.141" endtime="20220407 01:03:50.215"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>xpath=${PWDFIELD}</arg>
 <arg>${VALIDPWD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:40.056" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
-<msg timestamp="20220407 00:57:40.118" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220407 00:57:40.223" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220407 00:57:40.055" endtime="20220407 00:57:40.223"/>
+<msg timestamp="20220407 01:03:50.215" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
+<msg timestamp="20220407 01:03:50.252" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220407 01:03:50.308" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220407 01:03:50.215" endtime="20220407 01:03:50.308"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${SIGNIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:40.224" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:40.223" endtime="20220407 00:57:41.741"/>
+<msg timestamp="20220407 01:03:50.309" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:50.309" endtime="20220407 01:03:51.307"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:41.741" endtime="20220407 00:57:41.771"/>
+<status status="PASS" starttime="20220407 01:03:51.308" endtime="20220407 01:03:51.328"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220407 00:57:41.784" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
-<status status="PASS" starttime="20220407 00:57:41.771" endtime="20220407 00:57:41.784"/>
+<msg timestamp="20220407 01:03:51.337" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220407 01:03:51.328" endtime="20220407 01:03:51.337"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:39.824" endtime="20220407 00:57:41.784"/>
+<status status="PASS" starttime="20220407 01:03:50.086" endtime="20220407 01:03:51.337"/>
 </kw>
 <kw name="Leave the username and password blank" library="Login_resources">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>xpath=${USRFIELD}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220407 00:57:41.786" endtime="20220407 00:57:41.873"/>
+<status status="PASS" starttime="20220407 01:03:51.338" endtime="20220407 01:03:51.384"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${SIGNIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:41.874" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:41.873" endtime="20220407 00:57:43.225"/>
+<msg timestamp="20220407 01:03:51.385" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:51.384" endtime="20220407 01:03:51.450"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:43.226" endtime="20220407 00:57:43.262"/>
+<status status="PASS" starttime="20220407 01:03:51.450" endtime="20220407 01:03:51.471"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=${ErrorMessageLoc}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220407 00:57:43.275" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
-<status status="PASS" starttime="20220407 00:57:43.262" endtime="20220407 00:57:43.275"/>
+<msg timestamp="20220407 01:03:51.481" level="INFO">Current page contains element 'xpath=//*[@id="user-login-form"]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220407 01:03:51.471" endtime="20220407 01:03:51.481"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:41.786" endtime="20220407 00:57:43.275"/>
+<status status="PASS" starttime="20220407 01:03:51.337" endtime="20220407 01:03:51.481"/>
 </kw>
 <kw name="Enter valid username and password" library="Login_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=${USRFIELD}</arg>
 <arg>${VALIDUSR}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:43.278" level="INFO">Typing text 'Rami123' into text field 'xpath=//*[@id="edit-name"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:43.277" endtime="20220407 00:57:43.467"/>
+<msg timestamp="20220407 01:03:51.484" level="INFO">Typing text 'Rami123' into text field 'xpath=//*[@id="edit-name"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:51.483" endtime="20220407 01:03:51.557"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>xpath=${PWDFIELD}</arg>
 <arg>${VALIDPWD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:43.468" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
-<msg timestamp="20220407 00:57:43.539" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220407 00:57:43.651" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220407 00:57:43.467" endtime="20220407 00:57:43.651"/>
+<msg timestamp="20220407 01:03:51.558" level="INFO">Typing password into text field 'xpath=//*[@id="edit-pass"]'.</msg>
+<msg timestamp="20220407 01:03:51.611" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220407 01:03:51.679" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220407 01:03:51.557" endtime="20220407 01:03:51.679"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${SIGNIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:43.652" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
-<status status="PASS" starttime="20220407 00:57:43.651" endtime="20220407 00:57:56.889"/>
+<msg timestamp="20220407 01:03:51.680" level="INFO">Clicking element 'xpath=//*[@id="edit-submit"]'.</msg>
+<status status="PASS" starttime="20220407 01:03:51.679" endtime="20220407 01:03:54.048"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220407 00:57:58.896" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220407 00:57:56.890" endtime="20220407 00:57:58.896"/>
+<msg timestamp="20220407 01:03:56.055" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 01:03:54.048" endtime="20220407 01:03:56.056"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=${ProfileIcon}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220407 00:57:58.921" level="INFO">Current page contains element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/button/div'.</msg>
-<status status="PASS" starttime="20220407 00:57:58.897" endtime="20220407 00:57:58.922"/>
+<msg timestamp="20220407 01:03:56.107" level="INFO">Current page contains element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/button/div'.</msg>
+<status status="PASS" starttime="20220407 01:03:56.056" endtime="20220407 01:03:56.107"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:43.276" endtime="20220407 00:57:58.922"/>
+<status status="PASS" starttime="20220407 01:03:51.482" endtime="20220407 01:03:56.107"/>
 </kw>
 <doc>We expect the user to login</doc>
-<status status="PASS" starttime="20220407 00:57:35.821" endtime="20220407 00:57:58.923"/>
+<status status="PASS" starttime="20220407 01:03:46.916" endtime="20220407 01:03:56.109"/>
 </test>
 <test id="s1-t3" name="Navigate to Spaces page" line="22">
 <kw name="Navigate to Spaces" library="Hub_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${ProfileIcon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:58.929" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/button/div'.</msg>
-<status status="PASS" starttime="20220407 00:57:58.928" endtime="20220407 00:57:59.017"/>
+<msg timestamp="20220407 01:03:56.115" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/button/div'.</msg>
+<status status="PASS" starttime="20220407 01:03:56.115" endtime="20220407 01:03:56.171"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${Spaces}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:59.018" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220407 00:57:59.017" endtime="20220407 00:57:59.135"/>
+<msg timestamp="20220407 01:03:56.172" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/header/nav/div[2]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220407 01:03:56.171" endtime="20220407 01:03:56.265"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=${YourSpace}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220407 00:57:59.135" endtime="20220407 00:57:59.857"/>
+<status status="PASS" starttime="20220407 01:03:56.265" endtime="20220407 01:03:56.782"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>xpath=${YourSpace}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220407 00:57:59.880" level="INFO">Current page contains element 'xpath=//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/h2'.</msg>
-<status status="PASS" starttime="20220407 00:57:59.857" endtime="20220407 00:57:59.880"/>
+<msg timestamp="20220407 01:03:56.795" level="INFO">Current page contains element 'xpath=//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/h2'.</msg>
+<status status="PASS" starttime="20220407 01:03:56.783" endtime="20220407 01:03:56.795"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:58.927" endtime="20220407 00:57:59.880"/>
+<status status="PASS" starttime="20220407 01:03:56.114" endtime="20220407 01:03:56.795"/>
 </kw>
 <doc>We expect the user to navigate from HUB page to spaces page</doc>
-<status status="PASS" starttime="20220407 00:57:58.924" endtime="20220407 00:57:59.881"/>
+<status status="PASS" starttime="20220407 01:03:56.112" endtime="20220407 01:03:56.796"/>
 </test>
 <test id="s1-t4" name="Create a public space" line="25">
 <kw name="Create the public space" library="Create_Space_resources">
@@ -252,70 +252,79 @@
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${PublicSpace}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220407 00:57:59.887" level="INFO">Clicking button '//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/div/ul/li[3]/div/div/button[2]'.</msg>
-<msg timestamp="20220407 00:58:00.153" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220407 00:58:00.154" level="FAIL">Button with locator '//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/div/ul/li[3]/div/div/button[2]' not found.</msg>
-<status status="FAIL" starttime="20220407 00:57:59.886" endtime="20220407 00:58:00.157"/>
+<msg timestamp="20220407 01:03:56.802" level="INFO">Clicking button '//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/div/ul/li[3]/div/div/button[2]'.</msg>
+<status status="PASS" starttime="20220407 01:03:56.802" endtime="20220407 01:03:56.926"/>
 </kw>
-<status status="FAIL" starttime="20220407 00:57:59.886" endtime="20220407 00:58:00.158"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SpaceField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220407 01:03:56.926" endtime="20220407 01:03:57.431"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:59.885" endtime="20220407 00:58:00.158"/>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${SpaceField}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220407 01:03:57.431" endtime="20220407 01:03:57.526"/>
 </kw>
-<status status="PASS" starttime="20220407 00:57:59.884" endtime="20220407 00:58:00.158"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=${SpaceField}</arg>
+<arg>New Space</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 01:03:57.527" level="INFO">Typing text 'New Space' into text field 'xpath=//*[@id="__layout"]/div/div[1]/main/section[1]/div/div/div/div[1]/h3/div/div/textarea'.</msg>
+<status status="PASS" starttime="20220407 01:03:57.527" endtime="20220407 01:03:57.678"/>
+</kw>
+<status status="PASS" starttime="20220407 01:03:56.801" endtime="20220407 01:03:57.678"/>
+</kw>
+<status status="PASS" starttime="20220407 01:03:56.800" endtime="20220407 01:03:57.678"/>
+</kw>
+<status status="PASS" starttime="20220407 01:03:56.800" endtime="20220407 01:03:57.678"/>
 </kw>
 <doc>We expect the user to create a public space</doc>
-<status status="PASS" starttime="20220407 00:57:59.882" endtime="20220407 00:58:00.162"/>
+<status status="PASS" starttime="20220407 01:03:56.798" endtime="20220407 01:03:57.679"/>
 </test>
 <test id="s1-t5" name="Delete a public space" line="28">
 <kw name="Delete the public space" library="Delete_Space_resources">
 <kw name="Get Location" library="SeleniumLibrary">
 <var>${URl}</var>
 <doc>Returns the current browser window URL.</doc>
-<msg timestamp="20220407 00:58:00.222" level="INFO">${URl} = https://hub.knime.com/rami123/spaces</msg>
-<status status="PASS" starttime="20220407 00:58:00.166" endtime="20220407 00:58:00.222"/>
+<msg timestamp="20220407 01:03:57.692" level="INFO">${URl} = https://hub.knime.com/rami123/spaces/New%20space/latest/~BGbLjjQ5bB77Q347/</msg>
+<status status="PASS" starttime="20220407 01:03:57.683" endtime="20220407 01:03:57.692"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${Check}</var>
 <arg>"latest" in """${URl}"""</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220407 00:58:00.223" level="INFO">${Check} = False</msg>
-<status status="PASS" starttime="20220407 00:58:00.222" endtime="20220407 00:58:00.223"/>
+<msg timestamp="20220407 01:03:57.693" level="INFO">${Check} = True</msg>
+<status status="PASS" starttime="20220407 01:03:57.693" endtime="20220407 01:03:57.694"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${Check}</arg>
 <arg>Click Element</arg>
 <arg>${CreatedSpace}</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20220407 00:58:00.224" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CreatedSpace}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:58:00.229" level="INFO">Clicking element '//*[@id="__layout"]/div/div[1]/main/section/div/div[2]/div/div/ul/li[1]/a/div[2]'.</msg>
-<status status="PASS" starttime="20220407 00:58:00.228" endtime="20220407 00:58:00.421"/>
-</kw>
-<status status="PASS" starttime="20220407 00:58:00.223" endtime="20220407 00:58:00.421"/>
+<msg timestamp="20220407 01:03:57.694" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="PASS" starttime="20220407 01:03:57.694" endtime="20220407 01:03:57.695"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220407 00:58:02.432" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220407 00:58:00.421" endtime="20220407 00:58:02.432"/>
+<msg timestamp="20220407 01:03:59.708" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 01:03:57.695" endtime="20220407 01:03:59.708"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=${Dots}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 00:58:02.433" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg'.</msg>
-<msg timestamp="20220407 00:58:02.614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220407 00:58:02.615" level="FAIL">Element with locator 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg' not found.</msg>
-<status status="FAIL" starttime="20220407 00:58:02.432" endtime="20220407 00:58:02.616"/>
+<msg timestamp="20220407 01:03:59.709" level="INFO">Clicking element 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg'.</msg>
+<msg timestamp="20220407 01:03:59.849" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220407 01:03:59.850" level="FAIL">Element with locator 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg' not found.</msg>
+<status status="FAIL" starttime="20220407 01:03:59.708" endtime="20220407 01:03:59.852"/>
 </kw>
-<status status="FAIL" starttime="20220407 00:58:00.165" endtime="20220407 00:58:02.617"/>
+<status status="FAIL" starttime="20220407 01:03:57.682" endtime="20220407 01:03:59.854"/>
 </kw>
 <doc>We expect the user to delete a public space</doc>
-<status status="FAIL" starttime="20220407 00:58:00.164" endtime="20220407 00:58:02.629">Element with locator 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg' not found.</status>
+<status status="FAIL" starttime="20220407 01:03:57.681" endtime="20220407 01:03:59.860">Element with locator 'xpath=//*[@id="__layout"]/div/div[1]/main/section[2]/div/div[2]/div[2]/div[3]/div/button/svg' not found.</status>
 </test>
 <doc>Automation Testing for KNIME</doc>
-<status status="FAIL" starttime="20220407 00:57:29.313" endtime="20220407 00:58:02.655"/>
+<status status="FAIL" starttime="20220407 01:03:43.361" endtime="20220407 01:03:59.872"/>
 </suite>
 <statistics>
 <total>
@@ -328,6 +337,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220407 00:58:00.224" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20220407 01:03:57.694" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
 </errors>
 </robot>
