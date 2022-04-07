@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Login Page
+Documentation     UI Verification
 Library           SeleniumLibrary
 
 *** Variables ***

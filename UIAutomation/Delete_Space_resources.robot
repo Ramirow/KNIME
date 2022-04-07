@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Login Page
+Documentation     Delete space
 Library           SeleniumLibrary
 
 *** Variables ***
