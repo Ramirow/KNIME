@@ -6,8 +6,6 @@ Resource     ./Create_Space_resources.robot
 Resource     ./Delete_Space_resources.robot
 Resource     ./UI_Verification_resources.robot
 
-*** Variables ***
-
 *** Test Cases *** 
 Navigate to login page
     [Documentation]  We expect the user to navigate to login page
