@@ -33,5 +33,5 @@ Delete a public space
 Verify the UI of space page
      Verify the public space area 
      Verify the private space area 
-    #  Verify clicking on create public space button
-    #  Verify clicking on create private space button
+     Verify clicking on create public space button
+     Verify clicking on create private space button

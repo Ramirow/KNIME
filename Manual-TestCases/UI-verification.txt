@@ -2,14 +2,14 @@ Test Scenario : Verify the UI.
    Test case : Verify the name and the functionality of the public space.
         Pre Condition :  The user should be in space page.
         Test steps :  
-              1 - Verify the name of public space.
+              1 - Verify the name of public space is correct.
               2 - click on any place inside public space border. 
         Expected Result : The user should be navigated to this public space page .
 
     Test case : Verify the name and the functionality of the private space..
         Pre Condition :  The user should be in space page.
         Test steps :  
-              1 - Verify the name of private space.
+              1 - Verify the name of private space is correct.
               2 - click on any place inside private space border. 
         Expected Result : The user should be navigated to this private space page . 
 
