@@ -1,0 +1,11 @@
+* Title : The elements on the footer of space page are not aligned horizontally .
+* Enviroment : Beta .
+* Steps to Reproduce :
+    1 - login to the web page . 
+    2 - click on your profile icon and from dropdown menu click on spaces . 
+    3 - Check the footer of the page.
+* Expected Result : 
+    The elments in the footer should be alingned horizontally .
+* Actual Resut : 
+    The elements in the footer are alingned horizontally correclty.
+* Severity : Medium.
