@@ -1,12 +1,12 @@
 Test Scenario : Verify the user can delete a public space .
     Test case : Remove a public space.
-        Pre Condition : The user is in Space page and the created page is there.
+        Pre Condition : The user is in Spaces page and the created page is there.
         Test steps :  
-              1 - Click on the created space.
-              2 - The user should be in New space page . 
+              1 - Click on the space you want to delete.
+              2 - The user should be in the space details page . 
               3 - Click on three dots.
               4 - In drop down menu click on Delete space.
-              5 - in pop up message insert the space name . 
+              5 - In the text field of the pop up dialog insert the space name . 
               6 - Click on the delete button.
-        Expected Result : There should be a message to confime the deletetion is successful.
+        Expected Result : There should be a message to confirm the successful deletion.
         
