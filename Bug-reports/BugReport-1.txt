@@ -1,11 +1,11 @@
-* Title : missing the workflow icon in private space .
+* Title : there is a missing of the workflow icon in private space .
 * Enviroment : Beta .
 * Steps to Reproduce :
     1 - login to the web page . 
     2 - click on your profile icon and from dropdown menu click on spaces . 
     3 - Check the private space .
 * Expected Result : 
-    There should be three icon on private space like in public .
+    There should be three icons on the private space like in public space.
 * Actual Resut : 
-    The Private space mises the fist icon "Workflows".
+    The Private space misses the fist icon "Workflows".
 * Severity : Major.

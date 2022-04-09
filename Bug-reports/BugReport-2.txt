@@ -1,4 +1,4 @@
-* Title : The elements on the footer of space page are not aligned horizontally .
+* Title : The elements on the footer of spaces page are not aligned horizontally .
 * Enviroment : Beta .
 * Steps to Reproduce :
     1 - login to the web page . 
